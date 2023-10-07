@@ -19,4 +19,3 @@ def create_move_zip():
     os.rename('testzip.zip', 'tmp/testzip.zip')
 
     yield
-
