@@ -14,6 +14,8 @@ def create_move_zip():
     if not os.path.exists('tmp'):
             os.mkdir('tmp')
 
+    if os.path.exists('tmp/testzip.zip'):
+        os.remove('tmp/testzip.zip')
     os.rename('testzip.zip', 'tmp/testzip.zip')
 
     yield
