@@ -4,7 +4,7 @@ from zipfile import ZipFile
 import pytest
 
 @pytest.fixture(scope='session', autouse=True)
-def create_move_delete_zip():
+def create_move_zip():
     with ZipFile('testzip.zip', 'w') as ZipObj:
         ZipObj.write(os.path.abspath('resources/bar_menu.pdf'), os.path.basename('resources/bar_menu.pdf'))
         ZipObj.write(os.path.abspath('resources/Company_staff.xls'), os.path.basename('resources/Company_staff.xls'))
