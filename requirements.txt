@@ -1,0 +1,4 @@
+pytest
+pypdf2
+pandas
+openpyxl
