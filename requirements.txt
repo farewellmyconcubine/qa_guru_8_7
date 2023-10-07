@@ -2,3 +2,4 @@ pytest
 pypdf2
 pandas
 openpyxl
+xlrd
